@@ -1,0 +1,1388 @@
+/* 
+Colors:
+  link: https://coolors.co/palette/04080f-507dbc-a1c6ea-bbd1ea-dae3e5
+#DDDDDD - background 
+#222831 - text 
+#30475E - details
+#F05454 - details 
+*/
+
+html{
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #d1e7ff;
+}
+body::-webkit-scrollbar{
+  display: none;
+}
+
+/* Navbar Section */
+.navbar-container{
+  width: 100%;
+  height: 7rem;
+  background-color: #f1f6fd;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 45rem;
+}
+.solutionx-logo{
+  font-size: 2.6rem;
+  font-family: 'Rubik', sans-serif;
+  color: #04080F;
+  font-weight: 400;
+  margin: 0;
+}
+.navlinks{
+/* From https://css.glass */
+background: rgba(161, 198, 234, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(161, 198, 234, 1);
+  padding: 1rem 2rem;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem;
+}
+.navbtn{
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+.navlink:link,
+.navlink:visited{
+  font-size: 1.6rem;
+  font-family: 'Rubik', sans-serif;
+  color: #04080F;
+  text-decoration: none;
+  background:
+  linear-gradient(
+    to right,
+    rgba(100, 200, 200, 0),
+    rgba(100, 200, 200, 0)
+  ),
+  linear-gradient(
+    to right,
+    #BBD1EA,
+    #A1C6EA,
+    #507DBC
+   
+);
+background-size: 100% 3px, 0 3px;
+background-position: 100% 100%, 0 100%;
+background-repeat: no-repeat;
+transition: background-size 300ms;
+}
+.navlink:hover,
+.navlink:active{
+  background-size: 0 3px, 100% 3px;
+}
+/* Header Section */
+.header{
+  width: 100%;
+  height: 100vh;
+}
+.header-downside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.header-downside-container{
+/* From https://css.glass */
+background: rgba(161, 198, 234, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(161, 198, 234, 1);
+padding: 5rem;
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem;
+}
+.first-txt{
+  font-size: 7rem;
+  font-family: 'Rubik', sans-serif;
+  color: #04080F;
+  font-weight: 500;
+  margin: 0;
+}
+.second-txt{
+  font-size: 7rem;
+  font-family: 'Rubik', sans-serif;
+  color: #04080F;
+  font-weight: 500;
+  margin: 0;
+}
+.third-txt{
+  font-size: 7rem;
+  font-family: 'Rubik', sans-serif;
+  color: #04080F;
+  font-weight: 500;
+  margin: 0;
+}
+.header-btn-box{
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.header-btn {
+  width: 20rem;
+  font-size: 2rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 3rem;
+  height: 5.5rem;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.header-btn-link:link,
+.header-btn-link:visited{
+  text-decoration: none;
+  color: #04080F;
+}
+
+.header-btn:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.header-btn:focus {
+  outline: none;
+}
+.header-btn{
+  background-image: linear-gradient(to right, #DAE3E5, #BBD1EA, #DAE3E5);
+  box-shadow: 0 4px 15px 0 #507DBC;
+}
+.header-mascot{
+  width: 50rem;
+  height: 50rem; 
+  position: relative;
+}
+.mascot-img{
+  width: 50rem;
+  height: 50rem;
+}
+.header-mascot::after{
+  content: "";
+  width: 50rem;
+  height: 50rem;
+  border-top-right-radius: 2000px;
+  border-top-left-radius: 5000px;
+  border-bottom-right-radius: 5000px;
+  border-bottom-left-radius: 2800px;
+  background-image: linear-gradient(to right,   #BBD1EA, #A1C6EA, #A1C6EA,   #507DBC);
+  opacity: 20%;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  z-index: -9999999;
+
+}
+/* AboutUs Section */
+.aboutus-section{
+  width: 100%;
+  height: 100vh;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus-container{
+  width: 85%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5rem;
+/* From https://css.glass */
+background: rgba(161, 198, 234, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(161, 198, 234, 1);
+  padding: 2rem;
+}
+.aboutus-img-box{
+  width: 48rem;
+  height: 45rem;
+  position: relative;
+}
+.aboutus-img{
+  width: 48rem;
+  height: 45rem;
+}
+.aboutus-text{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.aboutus-article{
+  font-size: 4.5rem;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  color: #04080F;
+}
+.aboutus-txt{
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #04080F;
+}
+.aboutus-btn-box{
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+}
+.aboutus-btn {
+  width: 20rem;
+  font-size: 1.8rem;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  color: #04080F;
+  cursor: pointer;
+  margin-top: 2rem;
+  margin-right: 3rem;
+  height: 5.5rem;
+  text-align:center;
+  border: none;
+  background-size: 300% 100%;
+
+  border-radius: 50px;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+.aboutus-btn-link:link,
+.aboutus-btn-link:visited{
+  text-decoration: none;
+  color: #04080F;
+}
+
+.aboutus-btn:hover {
+  background-position: 100% 0;
+  transition: all .4s ease-in-out;
+  -o-transition: all .4s ease-in-out;
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+}
+
+.aboutus-btn:focus {
+  outline: none;
+}
+.aboutus-btn{
+  background-image: linear-gradient(to right, #DAE3E5, #BBD1EA, #DAE3E5);
+  box-shadow: 0 4px 15px 0 #507DBC;
+}
+.aboutus-img-box::after{
+  content: "";
+  width: 50rem;
+  height: 50rem;
+  border-top-right-radius: 5000px;
+  border-top-left-radius: 2000px;
+  border-bottom-right-radius: 3000px;
+  border-bottom-left-radius: 5000px;
+  background-image: linear-gradient(to right,  #507DBC, #A1C6EA, #A1C6EA,#BBD1EA   );
+  opacity: 20%;
+  position: absolute;
+  top: 0rem;
+  left: 0rem;
+  z-index: -9999999;
+
+}
+
+/* Team Section */
+.ourteam-section{
+  width: 100%;
+  height: auto;
+  margin-top: 10rem;
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center; 
+}
+.ourteam-container{
+  width: 85%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5rem;
+/* From https://css.glass */
+background: rgba(161, 198, 234, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(161, 198, 234, 1);
+  padding: 8rem 2rem 8rem 2rem;
+}
+.member-box{
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.55);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(255, 255, 255, 0.623);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  height: 20rem;
+  width: 83rem;
+  border-radius: 15px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+  
+}
+.member-header{
+  font-size: 3rem;
+  font-family: "Roboto", sans-serif;
+  color: #222831;
+  margin: 0;
+}
+.member-content{
+  padding: 2rem ;
+}
+.member-text{
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  color: #222831;
+  margin: 0;
+}
+.member-image-box{
+  border-radius: 1000px;
+  width: 20rem;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.member-img{
+  width: 20rem;
+  height: 20rem;
+}
+/* Our Services Section */
+.ourservice-section{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.ourservice-container{
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  justify-items: center;
+  row-gap: 2rem;
+  column-gap: 3rem;
+/* From https://css.glass */
+background: rgba(161, 198, 234, 0.45);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(161, 198, 234, 1);
+  padding: 2rem;
+}
+.servicecard{ 
+/* From https://css.glass */
+background: rgba(255, 255, 255, 0.55);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(255, 255, 255, 0.623);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  width: 34rem;
+  height: 20rem;
+  border-radius: 20px;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+.servicecard-container{
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1rem;
+}
+.servicecard-icon{
+  font-size: 4rem;
+  color: #04080F;
+}
+.servicecard-content{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 0.5rem;
+}
+.servicecard-header{
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #04080F;
+  margin: 0;
+}
+.servicecard-text{
+  font-size: 1.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #04080F;
+  margin: 0;
+}
+
+/* Contact Us Section */
+.contactus-section{
+  width: 100%;
+  height: 30rem;
+  background-color: #04080F;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.contactus-container{
+  padding: 0 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.contactus-quote{
+  text-align: center;
+}
+.quote{
+  font-size: 6rem;
+  font-family: "Roboto", sans-serif;
+  font-style: italic;
+  color: #ffff;
+  margin: 0;
+}
+.contactus-contacts{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.contactus-links{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.contactus-contactlink:link,
+.contactus-contactlink:visited{
+  font-size: 2.4rem;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  margin: 0;
+  text-decoration: none;
+  background:
+  linear-gradient(
+    to right,
+    rgba(100, 200, 200, 0),
+    rgba(100, 200, 200, 0)
+  ),
+  linear-gradient(
+    to right,
+    #BBD1EA,
+    #A1C6EA,
+    #507DBC
+   
+);
+background-size: 100% 3px, 0 3px;
+background-position: 100% 100%, 0 100%;
+background-repeat: no-repeat;
+transition: background-size 300ms;
+}
+.contactus-contactlink:hover,
+.contactus-contactlink:active{
+  background-size: 0 3px, 100% 3px;
+}
+.contactus-social{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.contactus-sociallink:link,
+.contactus-sociallink:visited{
+  font-size: 2.4rem;
+  color: #DAE3E5;
+  transition: all 0.15s;
+}
+.linkedin:hover,
+.linkedin:active{
+  color: rgb(0,119,181);
+}
+.instagram:hover,
+.instagram:active{
+  color: #DA396F;
+}
+.facebook:hover,
+.facebook:active{
+  color: #4867AA;
+}
+.whatsapp:hover,
+.whatsapp:active{
+  color: #44BE53;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+  /* Navbar Section*/
+  .navbar{
+    gap: 30rem;
+  }
+
+  /* Header Section*/
+  .header-mascot::after{
+    width: 40rem;
+    height: 40rem;
+    left: 1rem;
+  }
+  .mascot-img{
+    width: 40rem;
+    height: 40rem;
+  }
+  .header-mascot{
+    width: 40rem;
+    height: 40rem;
+  }
+  .header-btn{
+    font-size: 1.8rem;
+    width: 18rem;
+  }
+  .third-txt{
+    font-size: 5.5rem;
+  }
+  .second-txt{
+    font-size: 5.5rem;
+  }
+  .first-txt{
+    font-size: 5.5rem;
+  }
+
+  /* AboutUs Section */
+  .aboutus-img-box::after{
+    width: 40rem;
+    height: 40rem;
+  }
+  .aboutus-btn{
+    width: 18rem;
+    font-size: 1.6rem;
+  }
+  .aboutus-txt{
+    font-size: 1.2rem;
+  }
+  .aboutus-article{
+    font-size: 4.5rem;
+  }
+  .aboutus-img{
+    width: 40rem;
+    height: 37rem;
+  }
+  .aboutus-img-box{
+    width: 40rem;
+    height: 37rem;
+  }
+
+  /* Our Services Section */
+  .servicecard-text{
+    font-size: 1rem;
+  }
+  .servicecard-header{
+    font-size: 1.8rem;
+  }
+  .servicecard-icon{
+    font-size: 2.5rem;
+  }
+  .servicecard-container{
+    padding: 2rem;
+  }
+  .servicecard{
+    width: 30rem;
+    height: 15rem;
+  }
+  .ourservice-container{
+    width: 80%;
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+
+  /* Contact Us section */
+  
+  .contactus-contactlink:link,
+  .contactus-contactlink:visited{
+    font-size: 2rem;
+  }
+  .contactus-sociallink:link,
+  .contactus-sociallink:visited{
+    font-size: 2rem;
+  }
+  .quote{
+    font-size: 5rem;
+  }
+}
+
+@media (max-width: 1180px) {
+  .ourservice-container{
+    width: 70rem;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    justify-items: center;
+  }
+  .ourservice-section{
+    height: 110vh;
+  }
+}
+@media (max-width: 900px) {
+  /* Navbar Section */
+  .navbar{
+    gap: 15rem;
+  }
+  
+  /* Header Section */
+  .header-mascot::after{
+    width: 32rem;
+    height: 32rem;
+    left: 1rem;
+    top: 1rem;
+  }
+  .mascot-img{
+    width: 32rem;
+    height: 32rem;
+  }
+  .header-mascot{
+    width: 32rem;
+    height: 32rem;
+  }
+  .header-btn{
+    font-size: 1.5rem;
+    width: 15rem;
+  }
+  .third-txt{
+    font-size: 5rem;
+  }
+  .second-txt{
+    font-size: 5rem;
+  }
+  .first-txt{
+    font-size: 5rem;
+  }
+  .header{
+    height: 90vh;
+  }
+
+  /* About Us Section */
+  .aboutus-img-box::after{
+    width: 32rem;
+    height: 32rem;
+  }
+  .aboutus-btn{
+    width: 16rem;
+    font-size: 1.4rem;
+    height: 5rem;
+  }
+  .aboutus-txt{
+    font-size: 0.8rem;
+  }
+  .aboutus-article{
+    font-size: 3.5rem;
+  }
+  .aboutus-img{
+    width: 32rem;
+    height: 29rem;
+  }
+  .aboutus-img-box{
+    width: 32rem;
+    height: 29rem;
+  }
+  .aboutus-container{
+    height: 70vh;
+  }
+  .aboutus-section{
+    height: 70vh;
+    margin-top: 3rem;
+  }
+  /* Our Team Section */
+  .member-img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .member-image-box{
+    width: 15rem;
+    height: 15rem;
+  }
+  .member-text{
+    font-size: 1.4rem;
+  }
+  .member-header{
+    font-size: 2.5rem;
+  }
+  .member-box{
+    height: 15rem;
+    width: 70rem;
+  }
+  .ourteam-container{
+    gap: 5rem;
+  }
+
+  /* Our Service Section */
+  .ourservice-container{
+    column-gap: 1rem;
+  }
+
+  /* Contact Us Section */
+  .contactus-container{
+    padding: 0;
+  }
+}
+@media(max-width: 770px) {
+  /* Navbar Section */
+  .solutionx-logo{
+    font-size: 2.4rem;
+  }
+  .navlink:link,
+  .navlink:visited{
+  font-size: 1.2rem;
+  }
+  .navbar{
+    gap: 10rem;
+  }
+  /* Header Section */
+  .header-mascot::after{
+    width: 30rem;
+    height: 30rem;
+    left: 1rem;
+    top: 1rem;
+  }
+  .mascot-img{
+    width: 30rem;
+    height: 30rem;
+  }
+  .header-mascot{
+    width: 30rem;
+    height: 30rem;
+  }
+  .header-btn{
+    font-size: 1.4rem;
+    width: 13rem;
+    height: 5rem;
+  }
+  .third-txt{
+    font-size: 3.5rem;
+  }
+  .second-txt{
+    font-size: 3.5rem;
+  }
+  .first-txt{
+    font-size: 3.5rem;
+  }
+  .header{
+    height: 80vh;
+  }
+
+  /* AboutUs Section */
+  .aboutus-img-box::after{
+    width: 30rem;
+    height: 30rem;
+    top: -1rem;
+  }
+  .aboutus-btn{
+    width: 14rem;
+    font-size: 1.2rem;
+    height: 5rem;
+  }
+  .aboutus-txt{
+    font-size: 0.6rem;
+  }
+  .aboutus-article{
+    font-size: 3rem;
+  }
+  .aboutus-img{
+    width: 30rem;
+    height: 27rem;
+  }
+  .aboutus-img-box{
+    width: 30rem;
+    height: 27rem;
+  }
+  .aboutus-container{
+    height: 70vh;
+    gap: 3rem;
+  }
+  .aboutus-section{
+    height: 70vh;
+    margin-top: 3rem;
+  }
+   /* Our Team Section */
+   .member-img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .member-image-box{
+    width: 15rem;
+    height: 15rem;
+  }
+  .member-text{
+    font-size: 1.2rem;
+  }
+  .member-header{
+    font-size: 2.2rem;
+  }
+  .member-box{
+    height: 15rem;
+    width: 60rem;
+  }
+  .ourteam-container{
+    gap: 3rem;
+  }
+  /* Our Services Section */
+  .servicecard-text{
+    font-size: 0.8rem;
+  }
+  .servicecard-header{
+    font-size: 1.6rem;
+  }
+  .servicecard-icon{
+    font-size: 2.2rem;
+  }
+  .servicecard-container{
+    padding: 2rem;
+  }
+  .servicecard{
+    width: 26rem;
+    height: 13rem;
+  }
+  .ourservice-container{
+    width: 75%;
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+    /* Contact Us section */
+  
+    .contactus-contactlink:link,
+    .contactus-contactlink:visited{
+      font-size: 1.8rem;
+    }
+    .contactus-sociallink:link,
+    .contactus-sociallink:visited{
+      font-size: 1.8rem;
+    }
+    .quote{
+      font-size: 4.5rem;
+    }
+    .contactus-section{
+      height: 25rem;
+    }
+}
+
+@media(max-width: 720px) {
+  /* Navbar Section */
+  .navbar{
+    gap: 6rem;
+  }
+  .navbar-container{
+    height: 5rem;
+  }
+
+  /* Header Section */
+  .header-mascot::after{
+    width: 25rem;
+    height: 25rem;
+    left: 1rem;
+    top: 1rem;
+  }
+  .mascot-img{
+    width: 25rem;
+    height: 25rem;
+  }
+  .header-mascot{
+    width: 25rem;
+    height: 25rem;
+  }
+  .header-btn{
+    font-size: 1rem;
+    width: 10rem;
+    height: 4rem;
+  }
+  .third-txt{
+    font-size: 3rem;
+  }
+  .second-txt{
+    font-size: 3rem;
+  }
+  .first-txt{
+    font-size: 3rem;
+  }
+  .header-downside-container{
+    gap: 3rem;
+  }
+  .header{
+    height: 65vh;
+  }
+
+  /* AboutUs Section */
+  .aboutus-img-box::after{
+    width: 25rem;
+    height: 25rem;
+    top: -1rem;
+  }
+  .aboutus-btn{
+    width: 12rem;
+    font-size: 1rem;
+    height: 4rem;
+  }
+  .aboutus-txt{
+    font-size: 0.6rem;
+  }
+  .aboutus-article{
+    font-size: 2.6rem;
+  }
+  .aboutus-img{
+    width: 25rem;
+    height: 22rem;
+  }
+  .aboutus-img-box{
+    width: 25rem;
+    height: 22rem;
+  }
+  .aboutus-container{
+    height: 50vh;
+    gap: 3rem;
+  }
+  .aboutus-section{
+    height: 50vh;
+    margin-top: 3rem;
+  }
+  /* Our Team Section */
+  .member-img{
+    width: 13rem;
+    height: 13rem;
+  }
+  .member-image-box{
+    width: 13rem;
+    height: 13rem;
+  }
+  .member-text{
+    font-size: 1rem;
+  }
+  .member-header{
+    font-size: 2rem;
+  }
+  .member-box{
+    height: 13rem;
+    width: 50rem;
+  }
+  .ourteam-container{
+    gap: 3rem;
+  }
+
+  /* Our Services Section */
+  .servicecard-text{
+    font-size: 0.6rem;
+  }
+  .servicecard-header{
+    font-size: 1.2rem;
+  }
+  .servicecard-icon{
+    font-size: 1.8rem;
+  }
+  .servicecard-container{
+    padding: 2rem;
+  }
+  .servicecard{
+    width: 24rem;
+    height: 12rem;
+  }
+  .ourservice-container{
+    width: 52rem;
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+  .ourservice-section{
+    height: 90vh;
+  }
+}
+
+@media (max-width: 560px) {
+   /* Navbar Section */
+   .solutionx-logo{
+    font-size: 1.6rem;
+  }
+  .navlink:link,
+  .navlink:visited{
+  font-size: 1rem;
+  }
+  .navlinks{
+    gap: 0.5rem;
+  }
+  .navbar{
+    gap: 3rem;
+  }
+  /* Header Section */
+  .header-mascot::after{
+    width: 20rem;
+    height: 20rem;
+    left: 1rem;
+    top: 1rem;
+  }
+  .mascot-img{
+    width: 20rem;
+    height: 20rem;
+  }
+  .header-mascot{
+    width: 20rem;
+    height: 20rem;
+  }
+  .header-btn{
+    font-size: 0.8rem;
+    width: 8rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .third-txt{
+    font-size: 2.5rem;
+  }
+  .second-txt{
+    font-size: 2.5rem;
+  }
+  .first-txt{
+    font-size: 2.5rem;
+  }
+  .header-downside-container{
+    gap: 1rem;
+  }
+  .header{
+    height: 60vh;
+  }
+
+  /* AboutUs Section */
+  .aboutus-img-box::after{
+    width: 20rem;
+    height: 20rem;
+    top: -1rem;
+  }
+  .aboutus-btn{
+    width: 8rem;
+    font-size: 0.7rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .aboutus-txt{
+    font-size: 0.4rem;
+  }
+  .aboutus-article{
+    font-size: 2rem;
+  }
+  .aboutus-img{
+    width: 20rem;
+    height: 17rem;
+  }
+  .aboutus-img-box{
+    width: 20rem;
+    height: 17rem;
+  }
+  .aboutus-container{
+    height: 40vh;
+    gap: 3rem;
+  }
+  .aboutus-section{
+    height: 40vh;
+    margin-top: 3rem;
+  }
+
+  /* Our Team Section */
+  .member-img{
+    width: 10rem;
+    height: 10rem;
+  }
+  .member-image-box{
+    width: 10rem;
+    height: 10rem;
+  }
+  .member-text{
+    font-size: 0.8rem;
+  }
+  .member-header{
+    font-size: 1.8rem;
+  }
+  .member-box{
+    height: 10rem;
+    width: 45rem;
+  }
+  .ourteam-container{
+    gap: 3rem;
+  }
+
+  /* Our Services Section */
+  .servicecard-text{
+    font-size: 0.6rem;
+  }
+  .servicecard-header{
+    font-size: 1rem;
+  }
+  .servicecard-icon{
+    font-size: 1.6rem;
+  }
+  .servicecard-container{
+    padding: 2rem;
+    gap: 0.5rem;
+  }
+  .servicecard{
+    width: 20rem;
+    height: 10rem;
+  }
+  .ourservice-container{
+    width: 42rem;
+    row-gap: 1rem;
+    column-gap: 1rem;
+  }
+  .ourservice-section{
+    height: 80vh;
+  }
+
+   /* Contact Us section */
+  
+   .contactus-contactlink:link,
+   .contactus-contactlink:visited{
+     font-size: 1.4rem;
+   }
+   .contactus-sociallink:link,
+   .contactus-sociallink:visited{
+     font-size: 1.4rem;
+   }
+   .quote{
+     font-size: 3.4rem;
+   }
+   .contactus-section{
+     height: 20rem;
+   }
+}
+@media (max-width: 450px) {
+  /* Navbar Section */
+  .navlink:link,
+  .navlink:visited{
+  font-size: 1.2rem;
+  }
+  .navbar{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .navbar-container{
+    height: 7rem;
+  }
+  /* Header Section */
+  .header-mascot::after{
+    width: 25rem;
+    height: 25rem;
+    left: 0.5rem;
+    top: 1rem;
+  }
+  .mascot-img{
+    width: 25rem;
+    height: 25rem;
+  }
+  .header-mascot{
+    width: 25rem;
+    height: 25rem;
+  }
+  .header-btn{
+    font-size: 1rem;
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1rem;
+  }
+  .third-txt{
+    font-size: 4rem;
+  }
+  .second-txt{
+    font-size: 4rem;
+  }
+  .first-txt{
+    font-size: 4rem;
+  }
+  .header-downside-container{
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .header{
+    height: 70vh;
+  }
+  /* AboutUs Section */
+  .aboutus-img-box::after{
+    width: 25rem;
+    height: 25rem;
+    top: -1rem;
+  }
+  .aboutus-btn{
+    width: 11rem;
+    font-size: 1rem;
+    height: 3rem;
+    margin-top: 1rem;
+    margin-right: 2rem;
+  }
+  .aboutus-txt{
+    font-size: 0.7rem;
+  }
+  .aboutus-article{
+    font-size: 3rem;
+  }
+  .aboutus-img{
+    width: 25rem;
+    height: 23rem;
+  }
+  .aboutus-img-box{
+    width: 25rem;
+    height: 23rem;
+  }
+  .aboutus-text{
+    padding: 0 2rem;
+  }
+  .aboutus-container{
+    height: 80vh;
+    gap: 3rem;
+    flex-direction: column-reverse;
+  }
+  .aboutus-section{
+    height: 80vh;
+    margin-top: 3rem;
+  }
+  /* Our Team Section */
+  .member-img{
+    width: 15rem;
+    height: 15rem;
+  }
+  .member-image-box{
+    width: 15rem;
+    height: 15rem;
+  }
+  .member-text{
+    font-size: 0.8rem;
+  }
+  .member-header{
+    font-size: 1.8rem;
+  }
+  .member-box{
+    height: 18rem;
+    width: 35rem;
+  }
+  .member-content{
+    padding: 1rem;
+  }
+  .ourteam-container{
+    gap: 3rem;
+  }
+   /* Our Services Section */
+   .servicecard-text{
+    font-size: 1.4rem;
+  }
+  .servicecard-header{
+    font-size: 2.4rem;
+  }
+  .servicecard-icon{
+    font-size: 2.8rem;
+  }
+  .ourservice-container{
+    grid-template-columns: 1fr;
+    height: auto;
+    padding: 2rem;
+  }
+  .servicecard{
+    width: 36rem;
+    height: 18rem;
+  }
+  .servicecard-container{
+    padding: 2rem;
+  }
+  .ourservice-container{
+    width: 36rem;
+    row-gap: 1rem;
+    column-gap: 2rem;
+  }
+  .ourservice-section{
+    margin-top: 3rem;
+    height: auto;
+  }
+     /* Contact Us section */
+  
+     .contactus-contactlink:link,
+     .contactus-contactlink:visited{
+       font-size: 1.8rem;
+     }
+     .contactus-sociallink:link,
+     .contactus-sociallink:visited{
+       font-size: 1.8rem;
+     }
+     .quote{
+       font-size: 3rem;
+     }
+     .contactus-section{
+       height: 25rem;
+     }
+  
+}
+
+
+
+
+
